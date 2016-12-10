@@ -1,0 +1,37 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+double kr(double R){
+return 3.14*R*R;
+}
+double pr(double X,double Y){
+return X*Y;
+}
+double tr(double a,double b,double c){
+return sqrt((a+b+c)/2*((a+b+c)/2-a)*((a+b+c)/2-b)*((a+b+c)/2-c));
+}
+int main()
+   
+{
+	setlocale(LC_ALL, "Russian");
+    double a,b,c;
+		int X,Y,R;
+	cout<<"Ââĺäčňĺ a ";
+
+	cin>>a;
+	cout<<"Ââĺäčňĺ b ";
+	cin>>b;
+    cout<<"Ââĺäčňĺ c ";
+	cin>>c;
+	cout<<"Ďëîůŕäü ňđĺóăîëüíčęŕ "<<tr(a,b,c)<< endl;
+	cout<<"Đŕäčóń ";
+	cin>>R;
+	cout<<"Ďëîůŕäü ęđóăŕ "<<kr(R)<< endl;
+	cout<<"Ââĺäčňĺ X ";
+	cin>>X;
+    cout<<"Ââĺäčňĺ Y ";
+	cin>>Y;
+	cout<<"Ďëîůŕäü ďđ˙ěîóăîëüíčęŕ "<<pr(X,Y)<< endl;
+		system("pause");
+	return 0;
+}
