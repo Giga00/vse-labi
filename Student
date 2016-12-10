@@ -18,7 +18,7 @@ public:
 };
 void main()
 {
-	Student a("Artur","741");
+	Student a("Petr, Igor'","741");
 	cout << a.getname();
 	cout<<" ";
 	cout<<a.getgroup();
